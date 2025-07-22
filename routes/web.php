@@ -13,21 +13,9 @@ use App\Http\Controllers\Dene\DeneController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/login', function () {
+    return view('auth.login');
 });
 
-//Route::get('/iletisim', function () {
-  // return view('iletisim'); 
-//}); 
 
-//Route::get('/hakkimizda', function () {
-  //  return view('hakkimizda');
-//});
-
-
-Route::controller(DeneController::class,)->group(function () {
-    Route::get('/iletisim', 'iletfonksiyon')->name('ilet.yon')->middleware('yas');
-Route::get('/hakkimizda', 'hakFonksiyon')->name('hak.yon');
-});
 

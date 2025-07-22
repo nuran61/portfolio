@@ -15,7 +15,7 @@
 
         <!-- Görsel alanı -->
         <div class="image-container">
-            <img src="{{ asset('img/photo.jpeg') }}" alt="Giriş Görseli">
+            <img src="{{ asset('img/indir.jpeg') }}" alt="Giriş Görseli">
 
         </div>
 
@@ -24,18 +24,7 @@
             <div class="form">
                 <h1 class="form-title">Kullanıcı Girişi</h1>
 
-                <div class="social-icons">
-                    <img src="{{ asset('icons/facebook.png') }}" alt="Facebook" />
-                    <img src="{{ asset('icons/google.png') }}" alt="Google" />
-                    <img src="{{ asset('icons/twitter.png') }}" alt="Twitter" />
 
-                </div>
-
-                <div class="or-separator">
-                    <span></span>
-                    <p>ya da</p>
-                    <span></span>
-                </div>
 
                 <!-- Kayıt Formu -->
                 <form class="register-form">
@@ -67,6 +56,25 @@
 
                     <button type="submit">Kayıt Ol</button>
                     <p class="message">Zaten üye misiniz? <a href="#">Giriş yap</a></p>
+
+                    <div class="or-separator">
+                        <span></span>
+                        <p>ya da</p>
+                        <span></span>
+                    </div>
+                    <div class="social-icons">
+                        <div class="icon-wrapper">
+                            <img src="{{ asset('icons/facebook.jpg') }}" alt="Facebook" />
+                        </div>
+                        <div class="icon-wrapper">
+                            <img src="{{ asset('icons/google.jpg') }}" alt="Google" />
+                        </div>
+                        <div class="icon-wrapper">
+                            <img src="{{ asset('icons/apple.jpg') }}" alt="Apple" />
+                        </div>
+                    </div>
+
+
                 </form>
 
                 <!-- Giriş Formu -->
@@ -90,6 +98,26 @@
 
                     <button type="submit">Giriş Yap</button>
                     <p class="message">Henüz üye değil misiniz? <a href="#">Hesap oluştur</a></p>
+
+                    <div class="or-separator">
+                        <span></span>
+                        <p>ya da</p>
+                        <span></span>
+                    </div>
+                    <div class="social-icons">
+                        <div class="icon-wrapper">
+                            <img src="icons/facebook.jpg" alt="Facebook" />
+                        </div>
+                        <div class="icon-wrapper">
+                            <img src="icons/google.jpg" alt="Google" />
+                        </div>
+                        <div class="icon-wrapper">
+                            <img src="icons/apple.jpg" alt="Apple" />
+                        </div>
+                    </div>
+
+
+
                 </form>
 
             </div>

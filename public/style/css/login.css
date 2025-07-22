@@ -31,9 +31,10 @@ body {
 .form-title {
     font-size: 45px;
     font-weight: bold;
-    color: rebeccapurple;
+    color: #4B2E2B;
     text-align: center;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -91,7 +92,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
-    background-color: #B388EB;
+    background-color: #8B4513;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -107,31 +108,58 @@ body {
 }
 
 .form button:hover {
-    background-color: rebeccapurple;
+    background-color: #4B2E2B;
 }
 
 .form .message {
     margin-top: 15px;
     font-size: 20px;
     color: #333;
+    text-align: center;
 }
 
 .form .message a {
-    color: rebeccapurple;
+    color: #4B2E2B;
     text-decoration: none;
     font-weight: bold;
+    border-bottom: 1px solid #4B2E2B;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
+.icon-wrapper {
+    padding: 4px; /* işte bu boşluğu ekler */
+    border: 2px solid #D3D3D3;     /* çerçeve */
+    border-radius: 50%;            /* dairesel çerçeve */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.icon-wrapper:hover {
+    border-color: #D3D3D3;
+    transform: scale(1.1);
+}
+
+.icon-wrapper img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;     /* ikon da yuvarlak olsun */
+    object-fit: cover;
+}
+
+
+
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -149,14 +177,14 @@ body {
 }
 .or-separator span {
     flex: 1;
-    height: 1px;
-    background-color: black;
+    height: 2px;
+    background-color: #D3D3D3;
 }
 .or-separator p {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: #696969;
 }
 
 .register-form {
@@ -165,11 +193,10 @@ body {
 .image-container {
     padding: 25px;
     box-sizing: border-box;,
-width: 50vw;       /* Yarı ekran genişliği */
+    width: 50vw;       /* Yarı ekran genişliği */
     height: 100vh;     /* Tam ekran yüksekliği */
     overflow: hidden;  /* Taşan kısmı gizle */
     width: 50%;
-
 }
 
 .image-container img {
@@ -232,3 +259,4 @@ width: 50vw;       /* Yarı ekran genişliği */
         display: block;
     }
 }
+
